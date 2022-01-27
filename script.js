@@ -8,4 +8,7 @@ angular.module("listApp", [])
         $scope.newItem = "";
       }
     }
+    $scope.deleteItem = function(index) {
+      $scope.items.splice(index, 1);
+    }
 });
