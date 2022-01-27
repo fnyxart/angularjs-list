@@ -9,8 +9,8 @@
   <div class="main" ng-app="listApp" ng-controller="GuestListController">
     <h1>Guest List</h1>
     <div class="add-item">
-      <input placeholder="Add Guest" class="add-text">
-      <button>Add</button>
+      <input ng-model="newItem" placeholder="Add Guest" class="add-text">
+      <button ng-click="pushItem()">Add</button>
     </div>
     <ul>
       <li ng-repeat="i in items">
